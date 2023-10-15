@@ -1,0 +1,31 @@
+{
+  "name": "currencyexchange",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Esther-Freixo/Currency-exchange.git"
+  },
+  "author": "Esther Freixo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Esther-Freixo/Currency-exchange/issues"
+  },
+  "homepage": "https://github.com/Esther-Freixo/Currency-exchange#readme",
+  "dependencies": {
+    "vite": "^4.4.11"
+  },
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-n": "^16.2.0",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}
