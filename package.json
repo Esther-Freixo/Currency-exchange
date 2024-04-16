@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Esther-Freixo/Currency-exchange#readme",
   "dependencies": {
+    "sweetalert2": "^11.10.7",
     "vite": "^4.4.11"
   },
   "devDependencies": {
