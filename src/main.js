@@ -1,4 +1,5 @@
 import Swal from 'sweetalert2';
+import { currCalculator, renderCurrList } from './helpers';
 
 const searchBtn = document.querySelector('.btn-search');
 const input = document.querySelector('.currency-input');
@@ -15,14 +16,12 @@ searchBtn.addEventListener('click', (e) => {
         }
         return response.json();
     })
-    .then(data => {
-        console.log(data);
-        currencyTitle.innerHTML = `Currencies correpondent to 1 ${input.value}`
-
-        
-
-        currenciesUl.map(curren => currenciesUl.innerHTML = data.conversion_rates)
-    })
+    .then((currList) => {
+        renderCurrList(currList,
+        currencyTitle,
+        currenciesUl),
+        currCalculator()
+})
     .catch((error) => {
         Swal.fire({
             icon: 'error',
